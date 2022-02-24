@@ -1,0 +1,567 @@
+@font-face {
+    font-family: 'Rockley';
+    src: url('../font/Rockley/Rockley-Regular.ttf');
+}
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: rgb(17, 15, 15);
+    background-color: rgb(250,245,237);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    font-size: 3rem;
+    font-weight: 200;
+}
+
+#LandingPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*************** Logo + Menu ***************/
+#banner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+    /* logo */
+#logoBanner{
+    width: 100px;
+    height: 150px;
+}
+
+#logoBanner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+    /* Menu */
+#navBanner{
+    position:absolute;
+    top:20px;
+    right: 100px;
+    width: 60px;
+    height: 60px;
+}
+#groupeMenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.barMenu{
+    width: 100%;
+    height: 2px;
+    background-color: rgb(17, 15, 15);
+    margin: auto;
+}
+#textMenu{
+    color: rgb(17, 15, 15);
+
+}
+/*************** Home ***************/
+#home{
+    width: 100%;
+    height: 80vh ;
+    display: flex;
+}
+
+#homeImg{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
+
+#img1::after{
+    content: "";
+    position: absolute;
+    top:40%;
+    right: 550px;
+    width: 80px;
+    height: 300px;
+    z-index: -1;
+    background-color: rgb(233,124,90);
+}
+
+#title{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#title h1{
+    font-size: 4rem;
+    font-family: 'Rockley';
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+/**************** sépateur stylo ***************/
+/* stylo */
+#penSeparator{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 70px;
+}
+#pen{
+    width: 80%;
+    z-index: 2;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#pen img{
+    width: 60%;
+}
+/* effet ligne papier */
+#lines{
+    width: 800px;
+    position: absolute;
+    z-index: 1;
+    top:-80px;
+    right: 0;
+}
+.line{
+    margin: 40px;
+    width: 100%;
+    height: 0.1rem;
+    background-color: rgba(17, 15, 15, 0.7);
+}
+
+/*************** préambule ***************/
+#description{
+    background-color: rgba(99, 87,89, 0.3);
+    width: 100%;
+    height:500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contentDescription{
+    width: 60%;
+    height: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    margin-left: 50px;
+}
+
+#descriptionTitle{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#descriptionTitle h2{
+    width: 40%;
+}
+.lineDescription{
+    width: 60%;
+    height: 1.2px;
+    margin-left: 10px;
+    background-color: rgba(17, 15, 15, 0.7);
+}
+#paragraphDescription{
+    padding-right: 50px;
+}
+
+#paragraphDescription p{
+    font-size: 1.1rem;
+    text-align: justify;
+    padding-right: 50px;
+    padding: 5px 0;
+}
+#paragraphDescription h4{
+    padding-top: 20px;
+}
+#descriptionImg{
+    width:400px;
+    height: 300px;
+    box-shadow: 40px 20px 0px 0px rgba(233,124,90,1);
+-webkit-box-shadow: 40px 20px 0px 0px rgba(233,124,90,1);
+-moz-box-shadow: 40px 20px 0px 0px rgba(233,124,90,1);
+}
+#img2{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/***************prestations***************/
+#servingSet h2{
+    text-align: center;
+    margin-top: 20px;
+}
+#serviceImg{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#service{
+    width: 50%;
+    height: 100%;
+}
+#contentService{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 900px;
+}
+
+/*image*/
+#img3{
+    width: 400px;
+    height: 500px;
+    margin-top: 60px;
+}
+#img3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+#box{
+    transform: translateY(-50px);
+}
+
+.point{
+    background-color: rgb(233,124,90);
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    margin: 15px;
+    border-radius: 50%;
+}
+/*contenu prestation*/
+.itemService{
+    width: 100%;
+    height: 250px;
+}
+.itemServiceTitle{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    margin-top: 50px;
+}
+.itemServiceTitle h3{
+    padding-left: 50px ;
+}
+.fleche{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 3vw;
+    height: 3vw;
+}
+.fa-arrow-right{
+    color: rgb(250,245,237);
+    font-size: 1.7rem;
+}
+.item1{
+    background-color: rgb(97, 55, 61);
+}
+.item2{
+    background-color: rgb(182,110,84)
+
+}
+.item3{
+    background-color: rgb(99, 87,89);
+
+}
+.contentItemService p{
+    padding: 10px;
+    text-align: justify;
+}
+#separateurAside{
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#separateurAside img{
+    width: 110px;
+    height: 110px;
+    cursor: pointer;
+}
+#ligneVerticale{
+    width: 0.1rem;
+    height: 800px;
+    background-color: rgb(17, 15, 15);
+}
+
+/********* FOOTER ********/
+footer{
+    margin-top: 20px;
+    background-color: rgb(182,110,84);
+    color: rgb(250,245,237);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.itemFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px;
+}
+.separatorVertical{
+    background-color: rgb(250,245,237);
+    width:0.1rem;
+    height: 60px;
+
+}
+/********************** MediaQueries **********************/
+/* tablet */
+/* Pour les écran de 768px a 1200px */
+@media screen  and (max-width: 1200px) {
+    h2{
+        font-size: 1.3rem;
+    }
+    p{
+        font-size: 0.9rem;
+    }
+    h3{
+        font-size: 1.1rem;
+    }
+    h4{
+        font-size: 0.8rem;
+    }
+
+    /* image Home */
+    #img1 img{
+        width: 350px;
+    }    
+    #img1::after{
+        top:45%;
+        right: 310px;
+        width: 50px;
+        height: 160px;
+    }
+    /* titre home*/
+    #title h1{
+        font-size: 2rem;
+        font-family: 'Rockley';
+        font-weight: 400;
+        margin-left: 20px;
+    }
+
+    /* fond lignes */
+    #lines{
+        width: 450px;
+    }
+    .line{
+        margin: 30px;
+        height: 1px;
+        background-color: rgb(17, 15, 15);
+    }
+
+    /*preambule*/
+    #description{
+        width: 100%;
+        height:300px;
+    }
+    #contentDescription{
+        width: 50%;
+        height: 100%;
+    }
+    #descriptionImg{
+        width: 50%;
+        height: 100%;
+        box-shadow:none;
+    }
+    #img2{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #img2 img{
+        width: 300px;
+        height: 200px;
+        box-shadow: 10px 10px 0px 0px rgba(233,124,90,1);
+-webkit-box-shadow: 10px 10px 0px 0px rgba(233,124,90,1);
+-moz-box-shadow: 10px 10px 0px 0px rgba(233,124,90,1);
+    }
+    #paragraphDescription p{
+        font-size: 0.8rem;
+        text-align: justify;
+        padding-right: 50px;
+        padding: 5px 0;
+    }
+
+    /*Prestation*/
+    #contentService{
+        height: 800px;
+    }
+    .fa-arrow-right{
+        font-size: 1rem;
+        padding: 5px;
+    }
+    #serviceImg{
+        justify-content: flex-start;
+    }
+    #img3{
+        width: 200px;
+        height: 300px;
+        margin-top: 60px;
+    }
+    .point{
+        width: 3px;
+        height: 3px;
+        margin: 7px;
+    }
+    #separateurAside img{
+        width: 60px;
+        height: 60px;
+    }
+    .itemServiceTitle h3{
+        padding-left: 20px ;
+    }
+    .contentItemService p{
+        padding: 5px;
+        text-align: justify;
+    }
+    .itemServiceTitle{
+        margin-top: 20px;
+    }
+    #ligneVerticale{
+        height: 600px;
+    }
+    /*Footer*/
+    footer{
+        font-size: 0.7rem;
+    }
+}
+
+/* smartphone */
+/* Pour les écran de 0px a 767px */
+@media screen and (max-width: 767px) {
+    h2{
+        font-size: 1.2rem;
+    }
+    p{
+        font-size: 0.6rem;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    h4{
+        font-size: 0.7rem;
+    }
+    /* banniere */
+    #logoBanner{
+        width: 70px;
+        height: 100px;
+    }
+    #navBanner{
+        right: 20px;
+        width: 30px;
+        height: 30px;
+    }
+    .barMenu{
+        height: 0.5px;
+    }
+    #textMenu{
+        font-size: 0.7rem;
+    }
+    /* Home */
+    #home{
+        height: auto;
+    }
+    /* image Home */
+    #homeImg{
+        display: none;
+    }
+    /* titre home*/
+    #title{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: auto;
+        margin: auto;
+    }
+    #title h1{
+        font-size: 3rem;
+        text-align: center;
+    }
+    /* fond lignes */
+    #lines{
+        display: none;
+    }
+
+    /* img présentation*/
+    #descriptionImg{
+        display: none;
+    }
+    #contentDescription{
+        width: 100%;
+        margin: 20px;
+    }
+    #paragraphDescription{
+        padding: 0;
+    }
+    #paragraphDescription p{
+        font-size: 0.7rem;
+        
+    }
+    #paragraphDescription h4{
+        font-size: 0.8rem;
+    }
+    #img3{
+        width: 100px;
+        height: 200px;
+    }
+    #ligneVerticale{
+        height: 800px;
+    }
+    .fa-arrow-right{
+        font-size: .7rem;
+    }
+    footer{
+        width: 100%;
+        font-size: 0.5rem;
+        margin-top: 40px;
+        flex-wrap: wrap;
+    }
+    #footerLogo {
+        display: none;
+    }
+    .itemFooter{
+        margin: 5px;
+    }
+    .separatorVertical{
+        display: none;
+    }
+}
