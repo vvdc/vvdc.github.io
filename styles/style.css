@@ -47,7 +47,8 @@ h2{
 
     /* Menu */
 #navBanner{
-    position:absolute;
+    position:fixed;
+    z-index: 1000;
     top:20px;
     right: 100px;
     width: 60px;
@@ -60,6 +61,7 @@ h2{
     align-items: center;
     width: 100%;
     height: 100%;
+    cursor: pointer;
 }
 .barMenu{
     width: 100%;
@@ -69,8 +71,35 @@ h2{
 }
 #textMenu{
     color: rgb(17, 15, 15);
-
 }
+
+nav{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(233,124,90,0.5);
+    top: 0;
+    left: 0;
+}
+
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul li a{
+    padding: 60px;
+    text-decoration: none;
+    color: rgb(250,245,237);
+    font-size: 1.6rem;
+}
+
 /*************** Home ***************/
 #home{
     width: 100%;
@@ -185,6 +214,7 @@ h2{
 }
 #paragraphDescription{
     padding-right: 50px;
+    margin-top: 30px;
 }
 
 #paragraphDescription p{
@@ -309,7 +339,7 @@ h2{
 #separateurAside img{
     width: 110px;
     height: 110px;
-    cursor: pointer;
+    cursor:default;
 }
 #ligneVerticale{
     width: 0.1rem;
@@ -339,8 +369,13 @@ footer{
     background-color: rgb(250,245,237);
     width:0.1rem;
     height: 60px;
-
 }
+#mail a{
+    color:rgb(250,245,237);
+    text-decoration: none;
+    cursor: pointer;
+}
+
 /********************** MediaQueries **********************/
 /* tablet */
 /* Pour les écran de 768px a 1200px */
@@ -357,7 +392,21 @@ footer{
     h4{
         font-size: 0.8rem;
     }
-
+    /*NAV*/
+    nav ul li a{
+        padding: 20px;
+        font-size: 1rem;
+    }
+    #navBanner{
+        width: 50px;
+        height: 50px;
+    }
+    .barMenu{
+        height: 0.8px;
+    }
+    #textMenu{
+        font-size: 0.7rem;
+    }
     /* image Home */
     #img1 img{
         width: 350px;
@@ -480,6 +529,7 @@ footer{
     h4{
         font-size: 0.7rem;
     }
+
     /* banniere */
     #logoBanner{
         width: 70px;
@@ -496,6 +546,24 @@ footer{
     #textMenu{
         font-size: 0.7rem;
     }
+    nav{
+        height: 100%;
+        background-color: rgba(233,124,90,0.8);
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    nav ul li{
+        padding: 30px 0px;
+    }
+    nav ul li a{
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+    
     /* Home */
     #home{
         height: auto;
