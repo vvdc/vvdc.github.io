@@ -19,10 +19,56 @@ h2{
 }
 
 #LandingPage{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/*************** Load***************/
+.load-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(0);
+}
+
+.img-load{
+    width: 400px;
+    height: 500px;
+}
+
+.img-load img{
+    width: 100%;
+    height: 0;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.container-txt{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-left: 200px;
+
+}
+.titre-load{
+    opacity: 0;
+    margin-bottom: 40px;
+}
+.titre-load h1{
+    font-size: 5rem;
+    letter-spacing: 20px;
+    font-family: 'Rockley';
+}
+.txt-load{
+    opacity: 0;
+}
+.txt-load p {
+    font-size: 3rem;
+    font-family: 'Rockley';
 }
 
 /*************** Logo + Menu ***************/
@@ -379,7 +425,7 @@ footer{
 /********************** MediaQueries **********************/
 /* tablet */
 /* Pour les écran de 768px a 1200px */
-@media screen  and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
     h2{
         font-size: 1.3rem;
     }
@@ -392,6 +438,42 @@ footer{
     h4{
         font-size: 0.8rem;
     }
+    .img-load{
+        width: 200px;
+        height: 300px;
+    }
+    .container-txt{
+        margin-left: 50px;
+
+    }
+    .titre-load h1{
+        font-size: 3rem;
+        letter-spacing: 4px;
+    }
+    .txt-load p {
+        font-size: 2rem;
+    }
+
+/*************** Logo + Menu ***************/
+#banner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+    /* logo */
+#logoBanner{
+    width: 100px;
+    height: 150px;
+}
+
+#logoBanner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
     /*NAV*/
     nav ul li a{
         padding: 20px;
@@ -529,6 +611,25 @@ footer{
     h4{
         font-size: 0.7rem;
     }
+    .load-container{
+        flex-direction: column;
+
+    }
+    .img-load{
+        width: 200px;
+        height: 300px;
+    }
+    .container-txt{
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    .titre-load h1{
+        font-size: 1.4rem;
+        letter-spacing: 4px;
+    }
+    .txt-load p {
+        font-size: 1rem;
+    }
 
     /* banniere */
     #logoBanner{
@@ -548,7 +649,7 @@ footer{
     }
     nav{
         height: 100%;
-        background-color: rgba(233,124,90,0.8);
+        background-color: rgba(233,124,90,0.9);
     }
     nav ul{
         display: flex;
@@ -561,7 +662,7 @@ footer{
     }
     nav ul li a{
         padding: 10px;
-        font-size: 0.8rem;
+        font-size: 1.2rem;
     }
     
     /* Home */
