@@ -1,0 +1,80 @@
+// @media screen and (min-width: map-get($breakpoints,full-screen)){
+
+// }
+// @media screen and (max-width: map-get($breakpoints,desktop-down)){
+
+// }
+// @media screen and (max-width: map-get($breakpoints,tablet-down)){
+
+// }
+// @media screen and (max-width: map-get($breakpoints,phone-down)){
+
+// }
+
+
+h1,h2,h3, h4{
+    font-family:"Cormorant Garamond",sans-serif;
+}
+
+p,li,a,span,address{
+    font-family:"Proza Libre",sans-serif;
+    font-weight: 400;
+    @media screen and (max-width: map-get($breakpoints,desktop-down)){
+        font-size: 1rem ;
+    }
+    @media screen and (max-width: map-get($breakpoints,phone-down)){
+        font-size: 0.8rem ;
+    }
+}
+li{
+    list-style-type: none;
+}
+
+h1{
+    font-size: 2.8rem ;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 4rem;
+    @media screen and (max-width: map-get($breakpoints,desktop-down)){
+        font-size: 2.5rem ;
+        line-height: 3rem;
+    }
+    @media screen and (max-width: map-get($breakpoints,phone-down)){
+        font-size: 1.8rem ;
+        line-height: 2.5rem;
+    }
+}
+
+h2{
+    font-size: 2.2rem ;
+    font-weight: 400;
+    letter-spacing: 1.4px;
+    @media screen and (max-width: map-get($breakpoints,desktop-down)){
+        font-size: 1.8rem ;
+    }
+    @media screen and (max-width: map-get($breakpoints,phone-down)){
+        font-size: 1.3rem ;
+    }
+}
+h3{
+    font-size: 1.6rem ;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    @media screen and (max-width: map-get($breakpoints,desktop-down)){
+        font-size: 1.2rem ;
+    }
+    @media screen and (max-width: map-get($breakpoints,phone-down)){
+        font-size: 1rem ;
+    }
+}
+h4{
+    font-size: 1.1rem ;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    @media screen and (max-width: map-get($breakpoints,desktop-down)){
+        font-size: 0.9rem ;
+    }
+    @media screen and (max-width: map-get($breakpoints,phone-down)){
+        font-size: 0.8rem ;
+    }
+}

@@ -1,0 +1,81 @@
+.container--cards{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+    padding: 40px;
+    @media screen and (max-width: map-get($breakpoints,tablet-down)){
+        padding: 20px;
+    }
+    @media screen and (max-width: map-get($breakpoints,phone-down)){
+        padding: 0px;
+    }
+    .card--project{
+        width: calc(50% - 20px);
+        min-width: 290px;
+        margin-top: 40px;
+        height: auto;
+        border: 1px solid rgba(148, 158, 166, 0.7);;
+        border-radius: $radiusGlobal;
+        box-shadow: $bxshadow;
+        position: relative;
+        @media screen and (max-width: map-get($breakpoints,phone-down)){
+            width: calc(100% - 20px);
+        }
+        &__btn{
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+        &__img{
+            width: 100%;
+            height: auto;
+            aspect-ratio: 4/2;
+            background-color: $couleur2;
+            border-radius: $radiusGlobal;
+            border-bottom-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: $radiusGlobal;
+                border-bottom-right-radius: 0px;
+                border-bottom-left-radius: 0px;
+            }
+        }
+        &__title{
+            width: 100%;
+            position: relative;
+            text-align: left;
+            padding: 10px 20px;
+            background-color: $couleur2;
+            h3{
+                text-transform: uppercase;
+                color: $couleur5;
+            }
+        }
+        &__labels{
+            width: 60%;
+            padding: 10px;
+            li{
+                margin: 10px 0;
+                background-color: $couleur4;
+                color: $couleur1;
+                font-size: 1rem;
+                text-transform: capitalize;
+                padding: 5px 10px;
+                @media screen and (max-width: map-get($breakpoints,desktop-down)){
+                    font-size: 0.9rem;
+                }
+                @media screen and (max-width: map-get($breakpoints,tablet-down)){
+                    font-size: 0.7rem;
+                }
+            }
+
+        }
+    }
+}
+

@@ -1,0 +1,39 @@
+.fa-solid{
+    font-size: 2rem;
+    color: $couleur5;
+    @media screen and (max-width: map-get($breakpoints,tablet-down)){
+        font-size: 1.4rem;
+    }
+}
+
+.btn{
+    display: inline-block;
+    font-size: .9rem;
+    background-color: $couleur5;
+    color: $couleur1;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: $radiusGlobal;
+    padding: 5px 10px;
+    transition: all 1s ease-out;
+    @media screen and (max-width: map-get($breakpoints,desktop-down)){
+        font-size: 0.8rem;
+    }
+    @media screen and (max-width: map-get($breakpoints,tablet-down)){
+        font-size: 0.7rem;
+    }
+    &:hover{
+        background-color: $couleur1;
+        color:$couleur5;
+        border: 2px solid $couleur5;
+        transform: translateY(-10px);
+    }
+    &__form{
+        margin: 10px;
+    }
+    &__footer{
+        background-color: transparent;
+        color: $couleur5;
+    }
+}
+

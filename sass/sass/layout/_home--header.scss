@@ -1,0 +1,55 @@
+.home{
+    width: 100%;
+    height: 90vh;
+    padding: 20px;
+    @media screen and (max-width: map-get($breakpoints,tablet-down)){
+        height: 100%;
+    }
+    .box--home{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &__img{
+            width: calc(60% - 40px);
+            height: auto;
+            min-width: 820px;
+            min-height: 460px;
+            aspect-ratio: 1200 / 671;
+            background-image: url(/ressources/backgroung/bckg-home-header.webp);
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin-top: 40px;
+            border-radius: $radiusGlobal;
+            @media screen and (max-width: map-get($breakpoints,desktop-down)){
+                height: auto;
+                aspect-ratio: 640 / 358;
+                min-width: 618px;
+                min-height: 345px;
+                background-image: url(/ressources/backgroung/bckg-home-header-min.webp);
+                margin-top: 20px;
+            }
+            @media screen and (max-width: map-get($breakpoints,tablet-down)){
+                min-width: auto;
+                min-height: auto;
+            }
+            @media screen and (max-width: map-get($breakpoints,phone-down)){
+                width: calc(80% - 5px);
+                aspect-ratio: 640 / 358;
+                background-image: url(/ressources/backgroung/bckg-home-header-min.png);
+            }
+        }
+        &__title{
+            width: 100%;
+            height: auto;
+            text-align: center;
+            padding: 20px;
+            h2{
+                text-transform: none;
+                margin-top: 30px;
+            }
+        }
+    }
+}
