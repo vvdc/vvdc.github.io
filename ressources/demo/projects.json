@@ -1,0 +1,61 @@
+{
+    "project": [
+        {
+            "titre" : "Doges Patrimoine",
+            "description": "Réalisation d'un site vitrine pour la société Doges Patrimoine permettant aux visiteurs de consulter les activités de la société et d'être mis en relation.",
+            "points-clés": [
+                {
+                    "item1": "Animation de texte",
+                    "item2": "Formulaire de contact",
+                    "item3": "Carte de géolocalisation",
+                    "item4": "Redirection vers les médias sociaux.",
+                    "item5": "Slider pour afficher les biens immobiliers",
+                    "item6": "Espace d'administration personnalisé",
+                    "item7": "Entierement responsive (s'adapte à tous les supports)",
+                    "item8": "RGPD Cookies. + Google Analytics + SEO."
+                }
+            ],
+            "src-image1": "/ressources/demo/project-doges-patrimoine/demo1.webp",
+            "src-image2": "/ressources/demo/project-doges-patrimoine/demo2.webp",
+            "btn-link": "https://dogespatrimoine.fr"
+        },
+        {
+            "titre" : "Bleu Dore",
+            "description": "Réalistion d'un site vitrine pour la société Bleu Dore permettant aux visiteurs de consulter les activités de la société et d'être mis en relation.",
+            "points-clés": [
+                {
+                    "item1": "Site vitrine multi-pages",
+                    "item2": "Formulaire de contact",
+                    "item3": "Redirection vers les médias sociaux.",
+                    "item4": "Slider pour afficher les biens immobiliers",
+                    "item5": "Espace d'administration personnalisé",
+                    "item6": "Entierement responsive (s'adapte à tous les supports)",
+                    "item7": "RGPD Cookies. + Google Analytics + SEO.",
+                    "item8": "Evolution constante en fonction des besoins client"
+                }
+            ],
+            "src-image1": "/ressources/demo/project-bleu-dore/demo1.webp",
+            "src-image2": "/ressources/demo/project-bleu-dore/demo2.webp",
+            "btn-link": "https://bleudore.fr"
+        },
+        {
+            "titre" : "EVMA",
+            "description": "Réalisation d'un site vitrine pour une société d'assistance à la gestion administrative d'entreprise. Ce site n'est plus disponible à la suite d'un changement d'activité",
+            "points-clés": [
+                {
+                    "item1": "Animation au chargement de la page avec GSAP (GreenSock Animation Platform).",
+                    "item2": "Retranscription fidéle de la maquette graphiste",
+                    "item3": "RGPD Cookies. + Google Analytics + SEO.",
+                    "item4": "Entierement responsive (s'adapte à tous les supports)",
+                    "item5": "Evolution constante en fonction des besoins client",
+                    "item6": "",
+                    "item7": "",
+                    "item8": ""
+                }
+            ],
+            "src-image1": "/ressources/demo/project-EVMA/demo1.webp",
+            "src-image2": "/ressources/demo/project-EVMA/demo2.webp",
+            "btn-link": ""
+        }
+    ]
+}

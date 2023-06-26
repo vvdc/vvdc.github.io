@@ -1,0 +1,23 @@
+//utils
+@import "./utils/variables";
+//base
+@import "./base/global";
+@import "./base/typographie";
+
+//components
+@import "./components/btns";
+@import "./components/fastContact";
+
+//layout
+@import "./layout/home--header";
+@import "./layout/services";
+@import "./layout/portfolio";
+@import "./layout/about";
+@import "./layout/form-contact";
+@import "./layout/footer";
+//pages
+@import "./pages/annexes";
+@import "./pages/demo";
+
+
+// @import "";

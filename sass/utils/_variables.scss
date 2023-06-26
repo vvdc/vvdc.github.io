@@ -1,0 +1,37 @@
+// ===============================
+// Couleurs
+// ===============================
+//Blanc #E7ECEF
+//Gris ClAIR #CBD0D5 rgb(222, 225, 228);
+//Gris Foncé #6C757D
+//Bleu clair #6096BA rgb(96, 150, 186)
+//Bleu Foncé #274C78
+$couleur1:#fbfdff;
+$couleur2:#dee1e4;
+$couleur3:#949ea6;
+$couleur4:#6096ba;
+$couleur5:#274C78;
+$danger: rgba(240, 102, 102);
+$succes: rgb(143, 214, 143);
+
+
+// ===============================
+// radius
+// ===============================
+$radiusGlobal: 6px;
+
+// ===============================
+// box shadow
+// ===============================
+$bxshadow: 5px 5px 8px 1px rgba(96,150,186,0.3);
+
+
+// ===============================
+// Responsive
+// ===============================
+$breakpoints: (
+    phone-down: 500px,
+    tablet-down: 900px,
+    desktop-down: 1280px,
+    full-screen: 1442px
+);

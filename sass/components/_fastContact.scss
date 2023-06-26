@@ -1,0 +1,64 @@
+header{
+    width: 100%;
+    height: auto;
+    background-color: $couleur2;
+    padding: 15px;
+    display: none;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    @media screen and (max-width: map-get($breakpoints,phone-down)){
+        padding: 10px;
+    }
+    .fastContact{
+        width: 100%;
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-left: 20px;
+            @media screen and (max-width: map-get($breakpoints,tablet-down)){
+                margin-left: 15px;
+            }
+            @media screen and (max-width: map-get($breakpoints,phone-down)){
+                margin: 0px;
+            }
+            li{
+                a{
+                    text-decoration: none;
+                    color: $couleur4;
+                    font-size: 0.8rem;
+                    // @media screen and (max-width: map-get($breakpoints,desktop-down)){
+                    //     font-size: 1.1rem ;
+                    // }
+                    // @media screen and (max-width: map-get($breakpoints,tablet-down)){
+                    //     font-size: 0.9rem ;
+                    // }
+                    @media screen and (max-width: map-get($breakpoints,tablet-down)){
+                        font-size: 0.7rem ;
+                        margin: 5px;
+                    }
+                    .fa-solid{
+                        font-size: 1.2rem;
+                        margin: 0px 10px 0px 20px;
+                        color: $couleur4;
+                        padding-top: 5px;
+                        @media screen and (max-width: map-get($breakpoints,desktop-down)){
+                            font-size: 1.1rem ;
+                        }
+                        @media screen and (max-width: map-get($breakpoints,tablet-down)){
+                            font-size: 0.9rem ;
+                            margin: 0px 5px 0px 10px;
+                        }
+                        @media screen and (max-width: map-get($breakpoints,tablet-down)){
+                            font-size: 0.7rem ;
+                            margin: 0px 5px 0px 10px;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}

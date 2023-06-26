@@ -34,8 +34,6 @@
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <!-- recaptcha
-    <script src="https://www.google.com/recaptcha/api.js?render=6Le93pskAAAAACKUIrTfhz7bH7nIF0NcQkeaCtSz"></script> -->
 </head>
 
 <body>
@@ -47,7 +45,8 @@
             </ul>
         </div>
     </header>
-    <section class="home">
+
+    <div class="home">
         <div class="box--home">
             <div class="box--home__img"></div>
             <div class="box--home__title">
@@ -58,17 +57,102 @@
                 <i class="fa-solid fa-chevron-down fa-beat-fade"></i>
             </div>
         </div>
-    </section>
+    </div>
     <main>
+        <!-- DEBUT SERVICES -->
+        <section id="services" class="services">
+            <h2>services</h2>
+            <h3>Méthodes de conception</h3>
+            <article class="container--services">
+                <ul class="servicesList">
+                    <!-- création -->
+                    <li class="servicesList--item">
+                        <div class="servicesList--item__icone">
+                            <i class="fa-solid fa-file-signature method--icone"></i>
+                        </div>
+                        <div class="servicesList--item__description">
+                            <h4>Le projet</h4>
+                            <p>Conception/Création du projet. Site vitrine.</p>
+                            <p>WebDesign, Logo, Palette de couleurs...</p>
+                        </div>
+                    </li>
+                    <!-- code -->
+                    <li class="servicesList--item">
+                        <div class="servicesList--item__icone">
+                            <i class="fa-solid fa-code method--icone"></i>
+                        </div>
+                        <div class="servicesList--item__description">
+                            <h4>Développement web </h4>
+                            <p>Intégration du site HTML CSS JS PHP</p>
+                            <p>Retours et modifications avant mise en ligne.</p>
+                        </div>
+                    </li>
+                    <!-- responsive -->
+                    <li class="servicesList--item">
+                        <div class="servicesList--item__icone">
+                            <i class="fa-solid fa-desktop method--icone"></i>
+                        </div>
+                        <div class="servicesList--item__description">
+                            <h4>responsive design</h4>
+                            <p>Le projet s'adapte à tous les supports. Ordinateur, tablette, smartphone</p>
+                        </div>
+                    </li>
+                    <!-- hebergement -->
+                    <li class="servicesList--item">
+                        <div class="servicesList--item__icone">
+                            <i class="fa-solid fa-globe method--icone"></i>
+                        </div>
+                        <div class="servicesList--item__description">
+                            <h4>hébergement - maintenance</h4>
+                            <p>Hébergement, mise en ligne, mise à jours, évolution.</p>
+                        </div>
+                    </li>
+                    <!-- SEO -->
+                    <li class="servicesList--item">
+                        <div class="servicesList--item__icone">
+                            <i class="fa-solid fa-list-check method--icone"></i>
+                        </div>
+                        <div class="servicesList--item__description">
+                            <h4>référencement naturel : SEO</h4>
+                            <p>Le projet se classe naturellement et gratuitement dans les moteurs de recherche</p>
+                        </div>
+                    </li>
+                    <!-- Securité et RGPD -->
+                    <li class="servicesList--item">
+                        <div class="servicesList--item__icone">
+                            <i class="fa-solid fa-cookie method--icone"></i>
+                        </div>
+                        <div class="servicesList--item__description">
+                            <h4>RGPD sécurité</h4>
+                            <p>Navigation sur le site en toute sécurité (https) et respectant la réglementation en vigueur.</p>
+                        </div>
+                    </li>
+                    <!-- Satisfactions-->
+                    <li class="servicesList--item">
+                        <div class="servicesList--item__icone">
+                            <i class="fa-solid fa-handshake method--icone"></i>
+                        </div>
+                        <div class="servicesList--item__description">
+                            <h4>échanges - réactivité</h4>
+                            <p>Modifications rapide, adaptation, aide au developpement du site en continu.</p>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <!-- FIN SERVICES -->
+
+        <!-- DEBUT Portfolio -->
         <section id="portfolio" class="portfolio">
             <h2>réalisations</h2>
+            <h3>Quelques un de mes projets </h3>
             <!-- container des cartes -->
-            <div class="container--cards">
+            <article class="container--cards">
                 <!-- carte project DOGES PATRIMOINE -->
                 <div class="card--project">
-                    <a href="" class="btn card--project__btn">découvrir</a>
+                    <a href="" data-id="0" class="btn card--project__btn">découvrir</a>
                     <div class="card--project__img">
-                        <img src="/ressources/demo/project-doges-patrimoine/home-dp.fr.png" alt="page d'accueil dogespatrimoine.fr">
+                        <img src="/ressources/demo/project-doges-patrimoine/home-dp.fr.webp" alt="page d'accueil dogespatrimoine.fr">
                     </div>
                     <div class="card--project__title">
                         <h3>doges patrimoine</h3>
@@ -83,9 +167,9 @@
                 <!-- /carte -->
                 <!-- carte project BLEU DORE -->
                 <div class="card--project">
-                    <a href="" class="btn card--project__btn">découvrir</a>
+                    <a href="" data-id="1" class="btn card--project__btn">découvrir</a>
                     <div class="card--project__img">
-                        <img src="/ressources/demo/project-bleu-dore/home-bd.png" alt="page d'accueil bleudore.fr">
+                        <img src="/ressources/demo/project-bleu-dore/home-bd.webp" alt="page d'accueil bleudore.fr">
                     </div>
                     <div class="card--project__title">
                         <h3>bleu doré</h3>
@@ -100,9 +184,9 @@
                 <!-- /carte -->
                 <!-- carte project EVMA-->
                 <div class="card--project">
-                    <a href="" class="btn card--project__btn">découvrir</a>
+                    <a href="" data-id="2" class="btn card--project__btn">découvrir</a>
                     <div class="card--project__img">
-                        <img src="/ressources/demo/project-EVMA/home-evma.fr.png" alt="page d'accueil evma.fr">
+                        <img src="/ressources/demo/project-EVMA/home-evma.fr.webp" alt="page d'accueil evma.fr">
                     </div>
                     <div class="card--project__title">
                         <h3>EVMA</h3>
@@ -113,29 +197,34 @@
                         <li>PME</li>
                     </div>
                 </div>
-                <!-- /carte -->
-                <!-- carte project PAILLOTE L'ARIA -->
-                <!-- <div class="card--project">
-                    <a href="" class="btn card--project__btn">découvrir</a>
-                    <div class="card--project__img">
-                        <img src="/ressources/demo/project-paillote-laria/home-paillote-laria.png" alt="page d'accueil paillotelaria.fr">
-                    </div>
-                    <div class="card--project__title">
-                        <h3>paillote l'aria</h3>
-                    </div>
-                    <div class="card--project__labels">
-                        <li>Bar Restaurant</li>
-                        <li>site vitrine</li>
-                        <li>PME</li>
-                    </div>
-                </div> -->
-                <!-- /carte -->
-            </div>
+            </article>
         </section>
+        <!-- FIN Portfolio -->
+
+        <!-- DEBUT About -->
+        <section id="about" class="about">
+            <h2>à propos</h2>
+            <article class="container--about">
+                <p>Je suis Vincent,  <strong> Développeur web freelance </strong> et  <strong> créateur de site internet.</strong></p>
+                <p>Par mes compétences je vous fais gagner du temps dans la création de votre site web.</p>
+                <p>Faire un site soi-même, c'est possible ! Mais cela demande beaucoup de temps quand on y connait pas grand chose.</p>
+                <p>Ce temps vous ne l'avez pas forcement...</p>
+                <p>Lancez vous avec moi dans ce projet, je vous accompagne.</p>
+
+                <div class="content--quality">
+                    <span class="quality--text first-text"> Mes qualités: </span>
+                    <span class="quality--text sec-text"></span>
+                </div>
+            </article>
+        </section>
+        <!-- FIN About -->
+
+        <!-- DEBUT contact -->
         <section id="contact" class="contact">
-            <h2>Me laisser un message</h2>
+            <h2>Contact</h2>
+            <h3>Laissez moi un message, je vous réponds rapidement sous 24h!</h3>
             <div class="container--form">
-                <form id="idFormContact" class="form--contact" action="email_traitement.php">
+                <form id="idFormContact" class="form--contact">
                     <fieldset>
                         <div class="bloc--form">
                             <!-- nom prénom -->
@@ -143,48 +232,48 @@
                                 <span class="icone">
                                     <i class="fa fa-user"></i>
                                 </span>
-                                <input type="text" name="nom" placeholder="Nom / Prénom"  autocomplete="off" required>
+                                <input id="nom" type="text" name="nom" placeholder="Nom / Prénom"  autocomplete="off" >
                             </div>
                             <!-- email -->
                             <div class="bloc--form__input">
                                 <span class="icone">
                                     <i class="fa fa-at"></i>
                                 </span>
-                                <input type="email" name="email" placeholder="E-mail"  autocomplete="off" required>
+                                <input id="email" type="email" name="email" placeholder="E-mail"  autocomplete="off" >
                             </div>
                             <!-- tel -->
                             <div class="bloc--form__input">
                                 <span class="icone">
                                     <i class="fa fa-phone"></i>
                                 </span>
-                                <input type="tel" name="telephone" placeholder="Téléphone" autocomplete="off" required>
+                                <input id="tel" type="tel" name="telephone" placeholder="Téléphone" autocomplete="off" >
                             </div>
                             <!-- message -->
                             <div class="bloc--form__textarea">
-                                <textarea name="message" id="message" cols="30" rows="10" placeholder="Laisser moi un message, je vous réponds dans les 24 heures."></textarea>
-                            </div>
-                            <!-- consent form -->
-                            <div class="bloc--form__consent">
-                                <div class="check--consent">
-                                    <div class="check--consent__checkbox">
-                                        <input type="checkbox" name="consent" id="consent">
-                                    </div>
-                                    <div class="check--consent__text">
-                                        <p>En validant ce formulaire, j'accepte que les informations saisies soient utilisées dans le cadre de la demande de contact.</p>
-                                    </div>
-                                </div>
+                                <textarea id="message" name="message" id="message" cols="30" rows="7" placeholder="Quelques mots pour m'expliquer l'objet de votre demande."></textarea>
                             </div>
                             <!-- captcha -->
                             <div class="bloc--form__input">
                                 <span class="icone">
                                     <i class="fa fa-question"></i>
                                 </span>
-                                <input type="text" name="testhoney" placeholder="6 + 1 = ?" autocomplete="off" required>
+                                <input id="testhoney" type="text" name="testhoney" placeholder="6 + 1 = ?" autocomplete="off">
+                            </div>
+                            <!-- consent form -->
+                            <div class="bloc--form__consent">
+                                <div class="check--consent" id="consent" >
+                                    <div class="check--consent__checkbox">
+                                        <input type="checkbox" name="consent">
+                                    </div>
+                                    <div class="check--consent__text">
+                                        <p>En validant ce formulaire, j'accepte que les informations saisies soient utilisées dans le cadre de la demande de contact.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="bloc--submit">
                             <div class="msgForm">
-                                <p></p>
+                                <p id="affichEtat"></p>
                             </div>
                             <input class="btn btn__form" type="submit" value="Envoyer">
                         </div>
@@ -192,7 +281,66 @@
                 </form>
             </div>
         </section>
+        <!-- FIN contact -->
     </main>
 
+    <footer>
+        <div class="footer--container container--links">
+            <a href="/mentions-legales.html" class="btn btn__footer">Mentions légales</a>
+            <a href="/politiques-confidentialites.html" class="btn btn__footer">Politique de confidentialité</a>
+        </div>
+        <div class="footer--container container--copyright">
+            <p>Luvicode - 2023</p>
+        </div> 
+        <div class="footer--container container--logo">
+            <div class="block--logo">
+                <a href="/">
+                    <img src="/ressources/logo/logoluvicode.png" alt="logo de la société luvicode">
+                </a>
+                
+            </div>
+        </div>   
+    </footer>
+
+    <!-- modale portfolio -->
+    <div id="modal--portfolio">
+        <div class="closebtnportfolio">
+            <div class="line"></div>
+        </div>
+        <div class="containerImages">
+            <div class="boximg">
+                <img class="img1"src="" alt="preview">
+            </div>
+            <div class="boximg">
+                <img class="img2" src="" alt="preview">
+            </div>
+        </div>
+        <div class="modal--content">
+            <div class="modal--content__title">
+                <h3 class="title"></h3>
+            </div>
+            <div class="modal--content__description">
+                <div class="description">
+                    <p class="description--text"></p>
+                </div>
+                <ul class="listkeypoints">
+                    <span>Caractéristiques: </span>
+                    <li class="item item1"></li>
+                    <li class="item item2"></li>
+                    <li class="item item3"></li>
+                    <li class="item item4"></li>
+                    <li class="item item5"></li>
+                    <li class="item item6"></li>
+                    <li class="item item7"></li>
+                    <li class="item item8"></li>
+                </ul>
+            </div>
+            <div class="modal--link">
+                <a class="btn link" target="_blank">visiter le site</a>
+            </div>
+        </div>
+    </div>
+<script src="/ressources/js/app.js"></script>
+<script src="/ressources/js/projects.js"></script>
 </body>
 </html>

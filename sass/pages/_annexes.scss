@@ -1,0 +1,61 @@
+.ax--header {
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 5%;
+    padding: 10px;
+    @media screen and (max-width: map-get($breakpoints,tablet-down)){
+        width: 100%;
+        margin-left: 0px;
+    }
+    @media screen and (max-width: map-get($breakpoints,phone-down)){
+        padding: 5px;
+    }
+    h4{
+        text-align: center;
+    }
+}
+.ax--section {
+    width: 90%;
+    margin: 20px 0px;
+    margin-left: 5%;
+    text-align: left;
+    padding: 10px;
+    @media screen and (max-width: map-get($breakpoints,tablet-down)){
+        width: 100%;
+        margin-left: 0px;
+    }
+    @media screen and (max-width: map-get($breakpoints,phone-down)){
+        padding: 5px;
+    }
+    h4 {
+        margin-bottom: 10px;
+        text-align: center;
+        background-color: $couleur4;
+        color: $couleur1;
+        padding: 10px 0;
+        @media screen and (max-width: map-get($breakpoints,phone-down)){
+            margin-bottom: 5px;
+            padding: 5px 0;
+        }
+    }
+    p {
+        margin-bottom: 5px;
+    }
+    ul{
+        li{
+            margin-left: 10px;
+            margin-bottom: 5px;
+            @media screen and (max-width: map-get($breakpoints,phone-down)){
+                margin-left: 5px;
+            }
+        }
+    }
+    a {
+        text-decoration: none;
+        color: $couleur5;
+        font-size: .9rem;
+        @media screen and (max-width: map-get($breakpoints,phone-down)){
+            font-size: .8rem;
+        }
+    }
+}
