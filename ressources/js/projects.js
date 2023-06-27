@@ -20,9 +20,6 @@ const itemModal8= document.querySelector('#modal--portfolio .item8');
 const btnBalises = document.querySelectorAll('.container--cards .card--project a');
 //affichage item portfolio
 const closeBtnPortfolio= document.querySelector('.closebtnportfolio');
-// recuperation de la position de la section portfolio
-const positionSectionPorfolio= document.querySelector("#portfolio").offsetHeight;
-
 
 // gestion de l'affichage de la modal portfolio en fonction du btn cliqué sur les cartes portfolio
 const xhttp= new XMLHttpRequest();
@@ -80,7 +77,7 @@ function Action(){
 closeBtnPortfolio.addEventListener('click', ()=>{
     modalPortfolio.style.left="-250%";
     document.body.style.position="relative";
-    window.scroll(0, positionSectionPorfolio);
+    window.location.href="/#portfolio";
 });
 
 

@@ -1,5 +1,24 @@
 {
     "project": [
+        {   
+            "titre" : "EVMA",
+            "description": "Réalisation d'un site vitrine pour une société d'assistance à la gestion administrative d'entreprise. Ce site n'est plus disponible à la suite d'un changement d'activité",
+            "points-clés": [
+                {
+                    "item1": "Animation au chargement de la page avec GSAP (GreenSock Animation Platform).",
+                    "item2": "Retranscription fidéle de la maquette graphiste",
+                    "item3": "RGPD Cookies. + Google Analytics + SEO.",
+                    "item4": "Entièrement responsive (s'adapte à tous les supports)",
+                    "item5": "Evolution constante en fonction des besoins client",
+                    "item6": "",
+                    "item7": "",
+                    "item8": ""
+                }
+            ],
+            "src-image1": "/ressources/demo/project-EVMA/demo1.webp",
+            "src-image2": "/ressources/demo/project-EVMA/demo2.webp",
+            "btn-link": ""
+        },
         {
             "titre" : "Doges Patrimoine",
             "description": "Réalisation d'un site vitrine pour la société Doges Patrimoine permettant aux visiteurs de consulter les activités de la société et d'être mis en relation.",
@@ -39,12 +58,12 @@
             "btn-link": "https://bleudore.fr"
         },
         {
-            "titre" : "EVMA",
-            "description": "Réalisation d'un site vitrine pour une société d'assistance à la gestion administrative d'entreprise. Ce site n'est plus disponible à la suite d'un changement d'activité",
+            "titre" : "Paillotte l'Aria",
+            "description": "Réalisation d'un site vitrine pour une paillote corse - l'Aria. Le site permet aux clients de suivre les dernieres actualités de la paillote sur les réseaux sociaux, de prendre contact avec le gérant et également, de trouver aisément la paillote.",
             "points-clés": [
                 {
-                    "item1": "Animation au chargement de la page avec GSAP (GreenSock Animation Platform).",
-                    "item2": "Retranscription fidéle de la maquette graphiste",
+                    "item1": "Affichage des réseaux sociaux directement sur le site",
+                    "item2": "Redirections vers différents médias",
                     "item3": "RGPD Cookies. + Google Analytics + SEO.",
                     "item4": "Entièrement responsive (s'adapte à tous les supports)",
                     "item5": "Evolution constante en fonction des besoins client",
@@ -53,8 +72,8 @@
                     "item8": ""
                 }
             ],
-            "src-image1": "/ressources/demo/project-EVMA/demo1.webp",
-            "src-image2": "/ressources/demo/project-EVMA/demo2.webp",
+            "src-image1": "/ressources/demo/project-paillote-laria/demo1.webp",
+            "src-image2": "/ressources/demo/project-paillote-laria/demo2.webp",
             "btn-link": ""
         }
     ]
